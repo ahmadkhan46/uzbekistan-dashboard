@@ -12,6 +12,9 @@ env/
 create_presentation.py
 zip_submission.py
 
+# Raw data (not needed to run the app)
+original_data/
+
 # Dev tools
 .claude/
 CLAUDE.md
