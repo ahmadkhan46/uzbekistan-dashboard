@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Global ──────────────────────────────────────────────────────────────── */
+body, html {
+  background-color: #0d1117 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  color: #e8eaf6;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar             { width: 5px; height: 5px; }
+::-webkit-scrollbar-track       { background: #0d1117; }
+::-webkit-scrollbar-thumb       { background: #21273a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4f8ef7; }
+
+/* ── Dash Tabs — override React white defaults ────────────────────────────── */
+.dash-tabs { background: transparent !important; border: none !important; }
+.dash-tab-container { border: none !important; }
+.tab-container { padding: 0 !important; }
+
+/* Force tab text colours — Dash injects its own inline styles so !important required */
+.dash-tab {
+  background-color: #0d1117 !important;
+  color: #8892b0 !important;
+  border: none !important;
+  border-bottom: 2px solid #21273a !important;
+  padding: 10px 16px !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+  font-family: 'Inter', sans-serif !important;
+  transition: color 0.15s ease, border-color 0.15s ease !important;
+}
+.dash-tab:hover {
+  color: #c5cee0 !important;
+  border-bottom-color: #4f8ef7 !important;
+}
+.dash-tab--selected {
+  background-color: #161b27 !important;
+  color: #4f8ef7 !important;
+  border-bottom: 2px solid #4f8ef7 !important;
+  font-weight: 600 !important;
+}
+
+/* ── Year dropdown — navbar inline dropdowns ────────────────────────────── */
+.year-dropdown .Select-control,
+.year-dropdown.Select-control {
+  background-color: #1e2540 !important;
+  border: 1px solid #3a4060 !important;
+  border-radius: 8px !important;
+  min-height: 38px !important;
+  height: 38px !important;
+}
+/* The selected year number — must be large, bright, instantly readable */
+.year-dropdown .Select-value-label,
+.year-dropdown .Select--single > .Select-control .Select-value,
+.year-dropdown .Select-value {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  line-height: 38px !important;
+}
+.year-dropdown .Select-placeholder {
+  color: #8892b0 !important;
+  line-height: 38px !important;
+}
+.year-dropdown .Select-arrow-zone { padding-right: 6px !important; }
+.year-dropdown .Select-arrow { border-top-color: #c5cee0 !important; }
+.year-dropdown .Select-input > input { color: #ffffff !important; }
+.year-dropdown .Select-menu-outer {
+  background-color: #161b27 !important;
+  border: 1px solid #3a4060 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.6) !important;
+  max-height: 240px !important;
+  z-index: 9999 !important;
+}
+.year-dropdown .Select-option {
+  background-color: #161b27 !important;
+  color: #c5cee0 !important;
+  font-size: 0.88rem !important;
+  padding: 8px 12px !important;
+}
+.year-dropdown .Select-option.is-focused,
+.year-dropdown .Select-option:hover  { background-color: #1e2540 !important; color: #ffffff !important; }
+.year-dropdown .Select-option.is-selected { background-color: #1e2540 !important; color: #4f8ef7 !important; font-weight: 600 !important; }
+
+/* ── General dark dropdown (map indicator selector) ──────────────────────── */
+.dark-select .Select-control, .Select-control {
+  background-color: #0d1117 !important;
+  border: 1px solid #21273a !important;
+  color: #e8eaf6 !important;
+  border-radius: 8px !important;
+}
+.dark-select .Select-menu-outer, .Select-menu-outer {
+  background-color: #161b27 !important;
+  border: 1px solid #21273a !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+  z-index: 9999 !important;
+}
+.dark-select .Select-option, .Select-option {
+  background-color: #161b27 !important; color: #e8eaf6 !important;
+}
+.dark-select .Select-option.is-focused,
+.Select-option.is-focused,
+.Select-option:hover { background-color: #1e2540 !important; color: #4f8ef7 !important; }
+.dark-select .Select-option.is-selected,
+.Select-option.is-selected { background-color: #1e2540 !important; color: #4f8ef7 !important; }
+.Select-value-label,
+.Select--single > .Select-control .Select-value { color: #e8eaf6 !important; }
+.Select-placeholder { color: #8892b0 !important; }
+.Select-arrow { border-top-color: #8892b0 !important; }
+.is-open .Select-arrow { border-bottom-color: #8892b0 !important; }
+
+/* ── Trend chart cards — compact sparkline containers ────────────────────── */
+.trend-card {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.trend-card:hover {
+  box-shadow: 0 0 0 1px #4f8ef7, 0 4px 20px rgba(79,142,247,0.10) !important;
+  border-color: #4f8ef7 !important;
+}
+
+/* ── Hero chart card hover glow ──────────────────────────────────────────── */
+.chart-card {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.chart-card:hover {
+  box-shadow: 0 0 0 1px #4f8ef7, 0 6px 32px rgba(79,142,247,0.12) !important;
+}
+
+/* ── KPI card entrance animation ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.col:nth-child(1) > div { animation: fadeUp 0.3s ease 0.05s both; }
+.col:nth-child(2) > div { animation: fadeUp 0.3s ease 0.10s both; }
+.col:nth-child(3) > div { animation: fadeUp 0.3s ease 0.15s both; }
+.col:nth-child(4) > div { animation: fadeUp 0.3s ease 0.20s both; }
+.col:nth-child(5) > div { animation: fadeUp 0.3s ease 0.25s both; }
+
+/* ── Plotly toolbar — hidden via CSS and config (belt-and-suspenders) ────── */
+.modebar-container { display: none !important; }
+
+/* ── Bootstrap card resets ───────────────────────────────────────────────── */
+.card { background-color: #161b27 !important; border-color: #21273a !important; }
+
+/* ── Sticky navbar shadow ────────────────────────────────────────────────── */
+nav, [style*="position: sticky"] {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}

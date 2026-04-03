@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Submission artefacts (not needed on server)
+*.zip
+*.pptx
+create_presentation.py
+zip_submission.py
+
+# Dev tools
+.claude/
+CLAUDE.md
