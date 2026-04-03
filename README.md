@@ -23,9 +23,6 @@ An interactive data visualisation dashboard tracking Uzbekistan's development in
 
 All data sourced exclusively from the [World Bank WDI](https://databank.worldbank.org/source/world-development-indicators).
 
-**Indicators:** NY.GDP.MKTP.CD · NY.GDP.MKTP.KD.ZG · NY.GDP.PCAP.CD · NY.GDP.PCAP.PP.CD · NY.GNP.PCAP.CD · NE.TRD.GNFS.ZS · FP.CPI.TOTL.ZG · SP.DYN.LE00.IN · SP.DYN.IMRT.IN · SP.DYN.TFRT.IN · SP.POP.GROW · SP.POP.TOTL · SP.URB.TOTL.IN.ZS · EN.GHG.CO2.PC.CE.AR5 · EG.ELC.ACCS.ZS · EG.FEC.RNEW.ZS · EG.USE.COMM.FO.ZS · SE.PRM.ENRR · SE.SEC.ENRR · SE.XPD.TOTL.GD.ZS
-
-**Framework:** Dash (Python) · **Charts:** Plotly · **Data:** World Bank World Development Indicators (WDI) · **Country:** Uzbekistan (UZB) · [databank.worldbank.org](https://databank.worldbank.org)
 
 ## Run Locally
 
